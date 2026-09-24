@@ -4,7 +4,7 @@ class ElementBuilder {
         /**@type {HTMLElement}*/
         this.element = document.getElementById(id);
 
-        /**@type {HTMLElement} - alias*/
+        /**@type {HTMLElement} - alias for element*/
         this.el = this.element;
 
         if (!this.element) {
@@ -12,14 +12,15 @@ class ElementBuilder {
         }
     }
     
-    get a()		        	{ return /**@type {HTMLAnchorElement}*/ (this.element); }
     get anchor()			{ return /**@type {HTMLAnchorElement}*/ (this.element); }
+    get a()		        	{ return /**@type {HTMLAnchorElement}*/ (this.element); } // alias for anchor
     get area()				{ return /**@type {HTMLAreaElement}*/ (this.element); }
     get audio()				{ return /**@type {HTMLAudioElement}*/ (this.element); }
     get br()				{ return /**@type {HTMLBRElement}*/ (this.element); }
     get base()				{ return /**@type {HTMLBaseElement}*/ (this.element); }
     get body()				{ return /**@type {HTMLBodyElement}*/ (this.element); }
     get button()			{ return /**@type {HTMLButtonElement}*/ (this.element); }
+    get btn()			    { return /**@type {HTMLButtonElement}*/ (this.element); } // alias for button
     get canvas()			{ return /**@type {HTMLCanvasElement}*/ (this.element); }
     get dlist()				{ return /**@type {HTMLDListElement}*/ (this.element); }
     get data()				{ return /**@type {HTMLDataElement}*/ (this.element); }
@@ -37,7 +38,7 @@ class ElementBuilder {
     get hr()				{ return /**@type {HTMLHRElement}*/ (this.element); }
     get head()				{ return /**@type {HTMLHeadElement}*/ (this.element); }
     get heading()			{ return /**@type {HTMLHeadingElement}*/ (this.element); }
-    get h()			        { return /**@type {HTMLHeadingElement}*/ (this.element); }
+    get h()			        { return /**@type {HTMLHeadingElement}*/ (this.element); } // alias for heading
     get html()				{ return /**@type {HTMLHtmlElement}*/ (this.element); }
     get iframe()			{ return /**@type {HTMLIFrameElement}*/ (this.element); }
     get image()				{ return /**@type {HTMLImageElement}*/ (this.element); }
@@ -59,8 +60,8 @@ class ElementBuilder {
     get option()			{ return /**@type {HTMLOptionElement}*/ (this.element); }
     get orsvg()				{ return /**@type {HTMLOrSVGElement}*/ (this.element); }
     get output()			{ return /**@type {HTMLOutputElement}*/ (this.element); }
-    get p()			        { return /**@type {HTMLParagraphElement}*/ (this.element); }
     get paragraph()			{ return /**@type {HTMLParagraphElement}*/ (this.element); }
+    get p()			        { return /**@type {HTMLParagraphElement}*/ (this.element); } // alias for paragraph
     get param()				{ return /**@type {HTMLParamElement}*/ (this.element); }
     get picture()			{ return /**@type {HTMLPictureElement}*/ (this.element); }
     get pre()				{ return /**@type {HTMLPreElement}*/ (this.element); }

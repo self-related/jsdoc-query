@@ -1,4 +1,5 @@
 class ElementBuilder {
+    /**@param {string} id */
     constructor(id) {
         /**@type {HTMLElement}*/
         this.element = document.getElementById(id);
@@ -89,6 +90,10 @@ class ElementBuilder {
     get video()				{ return /**@type {HTMLVideoElement}*/ (this.element); }
 }
 
+/**
+ * @param {string} id
+ * @returns {ElementBuilder}
+ */
 export function $(id) {
     return new ElementBuilder(id);
 }

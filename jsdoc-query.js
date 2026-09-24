@@ -8,7 +8,7 @@ class ElementBuilder {
         this.el = this.element;
 
         if (!this.element) {
-            throw `Element [${id}] not found`;
+            throw new Error(`Element [${id}] not found`);
         }
     }
     
